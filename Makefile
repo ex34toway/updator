@@ -9,10 +9,10 @@ clean:
 	for i in $(DIRS); do cd $$i;make clean;cd ..; done
 
 install: all
-	#mkdir for tsar
 	mkdir -p $(INSTALL_DIR)bin
-	#copy bin file
+	mkdir -p $(INSTALL_DIR)logs
 	cp src/updator $(INSTALL_DIR)bin/updator
+	cp -r conf $(INSTALL_DIR)
 
 tags:
 	ctags -R
