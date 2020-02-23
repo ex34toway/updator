@@ -89,9 +89,11 @@
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <AdditionalSourcesToCopyMapping>
     </AdditionalSourcesToCopyMapping>
+    <NMakePreprocessorDefinitions>_DEBUG</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\task.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="conf\updator.properties" />
@@ -99,6 +101,7 @@
     <None Include="src\Makefile" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\task.h" />
     <ClInclude Include="include\updator.h" />
   </ItemGroup>
   <ItemDefinitionGroup />

@@ -14,8 +14,5 @@ install: all
 	cp src/updator $(INSTALL_DIR)bin/updator
 	cp -r conf $(INSTALL_DIR)
 
-tags:
-	ctags -R
-	cscope -Rbq
 
 .PHONY: all clean install

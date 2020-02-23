@@ -1,5 +1,6 @@
 
 #include "updator.h"
+#include "task.h"
 
 #include "Poco/Util/Option.h"
 #include "Poco/Util/OptionSet.h"
@@ -132,6 +133,8 @@ int UpdatorApplication::main(const ArgVec& args)
 			logger().debug("Application properties:");
 			printProperties("");
 		}
+		// testNotification();
+		testWorkerQueue();
 	}
 	return Application::EXIT_OK;
 }
